@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/teamback"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEAM HAWL"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:text="ANDROID"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="200dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/android"
+        android:layout_centerInParent="true"
+        android:text="WEBDEVELOPMENT"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="222dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/hack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HACKING"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/web"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="305dp"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        android:id="@+id/rb1"
+        android:layout_below="@+id/hack"
+        android:layout_centerInParent="true"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
